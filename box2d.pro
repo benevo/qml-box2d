@@ -21,7 +21,7 @@ include(box2d_lib.pri)
 include(examples/examples.pri)
 
 QML_INSTALL_PATH=$$(QML2_IMPORT_PATH)#$$[QT_INSTALL_QML]
-importPath = $$QML_INSTALL_PATH/$$replace(TARGETPATH, \\., /).$$API_VER
+importPath = $$QML_INSTALL_PATH/$$replace(TARGETPATH, \\., /)#.$$API_VER
 target.path = $${importPath}
 
 qmldir.path = $${importPath}
